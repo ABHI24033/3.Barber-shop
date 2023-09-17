@@ -87,21 +87,21 @@
                 </div>
             </div>
             <div>
-                <img src="./images/washing.jpg" alt="washing"  class="a">
+                <img src="./images/washing.jpg" alt="washing" class="a">
                 <div class="detail">
                     <h3>Washing</h3>
                     <p>$26.00</p>
                 </div>
             </div>
             <div>
-                <img src="./images/shaves.jpg" alt="sahves"  class="a">
+                <img src="./images/shaves.jpg" alt="sahves" class="a">
                 <div class="detail">
                     <h3>Shaves</h3>
                     <p>$30.00</p>
                 </div>
             </div>
             <div>
-                <img src="./images/kids.jpg" alt="kids"  class="a">
+                <img src="./images/kids.jpg" alt="kids" class="a">
                 <div class="detail">
                     <h3>Kids</h3>
                     <p>$25.00</p>
@@ -114,22 +114,57 @@
             <p>Please fill out the form and we get back to you</p>
             <div class="form">
                 <form action="">
-                    <input type="text" name="" id="">
-                    <input type="number" name="" id="">
-                    <input type="time" name="" id="">
-                    <!-- <input type="text" name="" id=""> -->
-                    <select name="brances" id="">
-                        <option value="">Ratu Road</option>
-                        <option value="">Piska More</option>
-                        <option value="">Harmu</option>
-                        <option value="">Lalpur</option>
-                    </select>
-                    <input type="date" name="" id="">
-                    <input type="number" name="" id="">
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Full Name">
+                        <input type="number" name="phone" id="phone" placeholder="Phone Number">
+                    </div>
+                    <div>
+                        <input type="time" name="timing" id="time" placeholder="Time of visiting">
+                        <!-- <input type="text" name="" id=""> -->
+                        <select name="brances" id="branches" aria-placeholder="Select branches">
+                            <option disabled selected>Select branches</option>
+                            <option value="ratu-road">Ratu Road</option>
+                            <option value="pisks-more">Piska More</option>
+                            <option value="harmu">Harmu</option>
+                            <option value="lalpur">Lalpur</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="date" name="date" id="date" placeholder="Date">
+                        <input type="number" name="noOfPeople" placeholder="Number of People">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Comment (Optional)"></textarea>
+
+                    <button type="submit" class="bttn brown-btn" style="width: 10rem;">Submit</button>
                 </form>
             </div>
         </div>
     </div>
+    <!-- ====================price list start============== -->
+    <div class="price-list">
+        <div class="left">
+            <h1>Price List</h1>
+            <p>starting at $25</p>
+            <div class="list">
+                <h5>Hair Cut <span>ad</span><strong>$32.00</strong> </h5>
+                <h5>Hair Cut <span>1</span><strong>$32.00</strong> </h5>
+                <h5>Hair Cut <span>1</span><strong>$32.00</strong> </h5>
+                <h5>Hair Cut <span>1</span><strong>$32.00</strong> </h5>
+                <h5>Hair Cut <span>1</span><strong>$32.00</strong> </h5>
+                <h5>Hair Cut <span>1</span><strong>$32.00</strong> </h5>
+                <h5>Hair Cut <span>1</span><strong>$32.00</strong> </h5>
+            </div>
+        </div>
+        <div class="right">
+            <div class="cards">
+                <div>
+                    <img src="./images/vintage-chair-barbershop.jpg" alt="Barber shop chair">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====================price list end================ -->
+
 </body>
 
 </html>

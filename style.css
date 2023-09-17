@@ -216,3 +216,86 @@ body{
     padding: 0.2rem 1rem;
     border-radius: 5rem;
 }
+/* =============Book a seat=========== */
+.booking{
+    /* background-color: #47d3f6; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+.booking>h2{
+    font-size: 3rem;
+
+}
+.booking>p{
+    color: gray;
+    font-size: 1.3rem;
+}
+.form{
+    width: 70%;
+    /* border: 3px solid black; */
+    min-height: 70vh;
+}
+form{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form > div{
+    /* background-color: #c69347; */
+    width: 90%;
+    height: 3rem;
+    margin:1rem
+}
+form>div>input,select{
+    width: 49%;
+    padding: 0.7rem;
+    font-size: large;
+    font-family: cursive;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    /* margin-right: 10px; */
+    /* heigh; */
+}
+form>textarea{
+    width: 90%;
+    padding: 0.7rem;
+    font-size: large;
+    font-family: cursive;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+}
+/* ===================price list========== */
+.price-list{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-color: #47d3f6;
+    align-items: center;
+    justify-content: center;
+}
+.price-list>.left{
+    width: 60%;
+    background-color: red;
+}
+.list>h5{
+    width: 90%;
+}
+.list>h5>span{
+    /* width: 200px; */
+    /* width: 30rem;
+    border: 2px solid black;
+    height: 2px; */
+
+    background: var(#717275);
+    flex: auto;
+    height: 2px;
+    margin: auto 15px 0;
+
+}
