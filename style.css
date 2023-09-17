@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --navColor:#c69347;
+    --fontFamily:cursive;
+    --marginLeft:25%;
+}
+body{
+    font-family: var(--fontFamily);
+    margin-left: var(--marginLeft);
+}
+.sidenav{
+    background-color: var(--navColor);
+    color: white;
+    height: 100vh;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sidenav>img{
+    width: 10rem;
+    margin-bottom: 20%;
+}
+.sidenav>ul>a>li{
+    list-style: none;
+    color: black;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    font-family: var(--fontFamily);
+    font-weight: 600;
+}
+.sidenav>ul>a{
+   text-decoration: none;
+}
+.sidenav>ul>a>li:hover{
+   color: white;
+}
+/* ============banner================ */
+.banner{
+    width: 100%;
+    background-image: linear-gradient(90deg,#f6bc65,#47d3f6);
+    height: 100vh;
+    /* margin-left: var(--marginLeft); */
+    left: 0;
+    border-bottom: 1rem solid var(--navColor);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+.banner>h1{
+    font-size: 4rem;
+    color: white;
+    margin-left: 3rem;
+}
+.banner>p{
+    margin-left: 3rem;
+    font-size: 1.2rem;
+}
+.btn{
+    margin: 3rem;
+}
+.circular{
+    position: absolute;
+    right: -3.6rem;
+    bottom: -3.6rem;
+    width: 37%;
+    height: 60%;
+    border-radius: 50%;
+    border: 0.7rem solid var(--navColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.circular>p{
+    color: white;
+    font-size: 2rem;
+    width: 80%;
+    text-align: center;
+}
+.circular>img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -3.5rem;
+    border: 0.4rem solid var(--navColor);
+}
+/* =============About=========== */
+.about{
+    width: 100%;
+    min-height: 100vh;
+
+}
+.Aboutt{
+    margin: 3rem;
+    border-bottom: 1px solid lightgray;
+}
+.Aboutt>h1{
+    font-size: 3rem;
+}
+.Aboutt>p{
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    color: gray;
+}
+.barbers{
+    width: 100%;
+}
+.barbers>h2{
+    color: brown;
+    margin-left: 4.8rem;
+    margin-bottom: 1rem;
+}
+.barbers>div{
+    display: flex;
+    justify-content: center;
+}
+.discount{
+    background-color: gray;
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.discount>h1{
+    color: brown;
+    font-size: 3rem;
+    margin: 1rem;
+}
+#text{
+    color: white;
+    font-size: 1.2rem;
+}
+#code{
+    background-color: #c69347;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+/* =================services==============*/
+.services{
+    margin-left: 3rem;
+}
+.services>h1{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.service{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service>div{
+    width: 45%;
+    height: 40vh;
+    margin: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+.service>div>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    transition: all 1s;
+}
+.service>div:hover .a{
+    scale: 1.05;
+}
+.service>div:hover .detail{
+    border: 5px solid #c69347;
+}
+.detail{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    position: absolute;
+    top: 1.5rem;
+    color: white;
+    width: 85%;
+    height: 80%;
+    border: 1px solid white;
+    z-index: 1;
+    border-radius: 1rem;
+    transition: all 1s;
+}
+.detail>h3,p{
+    margin-bottom: 1.5rem;
+}
+.detail>h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.detail>p{
+    background-color: #c69347;
+    padding: 0.2rem 1rem;
+    border-radius: 5rem;
+}

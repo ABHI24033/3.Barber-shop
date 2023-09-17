@@ -1,0 +1,53 @@
+
+.bttn{
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.5s ;
+    margin: 1rem;
+}
+.bttn:hover{
+    background-color: orange;
+}
+.outlined-btn{
+    background-color: transparent;
+    border: 2px solid white;
+}
+.outlined-btn:hover{
+   border: 2px solid orange;
+}
+.brown-btn{
+    background-color: brown;
+    border: none;
+
+}
+.yellow-btn{
+    background-color: #c69347;
+    border: none;
+}
+/* ====================About section================= */
+.cards{
+    width: 21rem;
+    height: 14rem;
+    background-color: #f6bc65;
+    margin: 2rem;
+    position: relative;
+    border-radius: 1rem;
+    transition: all 0.3s;
+}
+.cards:hover{
+    background-image: linear-gradient(90deg,orange,aqua);
+    scale: 1.1;
+}
+.cards>div>img{
+    width: 100%;
+    height: 14rem;
+    transform: rotate(10deg);
+    border-radius: 1rem;
+}
+
+/* =============================================================== */
