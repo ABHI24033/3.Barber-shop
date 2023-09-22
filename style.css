@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 :root{
@@ -24,6 +24,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.navIcons{
+    display: none;
 }
 .sidenav>img{
     width: 10rem;
@@ -156,16 +159,21 @@ body{
 /* =================services==============*/
 .services{
     margin-left: 3rem;
+    /* background-image: url("./images/vintage-chair-barbershop.jpg"); */
 }
 .services>h1{
     margin-top: 3rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     font-size: 3rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    background-color: white;
+    width: 100%;
 }
 .service{
     display: flex;
     flex-wrap: wrap;
+    background-color: white;
+    padding-bottom: 5rem;
 }
 .service>div{
     width: 45%;
@@ -204,7 +212,7 @@ body{
     border-radius: 1rem;
     transition: all 1s;
 }
-.detail>h3,p{
+.detail>h3,.detail>p{
     margin-bottom: 1.5rem;
 }
 .detail>h3{
@@ -219,25 +227,46 @@ body{
 /* =============Book a seat=========== */
 .booking{
     /* background-color: #47d3f6; */
+    background-image: url("./images/vintage-chair-barbershop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    /* margin-left: 0; */
 }
-.booking>h2{
+.booking>div{
+    width: 90%;
+    height: 110vh;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.booking>div>h2{
     font-size: 3rem;
-
+    /* background-color: white; */
+    width: 100%;
+    text-align: center;
 }
-.booking>p{
+.booking>div>p{
+    text-align: center;
     color: gray;
     font-size: 1.3rem;
+    /* background-color: white; */
+    width: 100%;
 }
 .form{
-    width: 70%;
+    width: 90%;
     /* border: 3px solid black; */
+    background-color: white;
     min-height: 70vh;
 }
 form{
@@ -276,26 +305,183 @@ form>textarea{
     display: flex;
     width: 100%;
     height: 80vh;
-    background-color: #47d3f6;
+    /* background-color: #47d3f6; */
     align-items: center;
     justify-content: center;
 }
 .price-list>.left{
     width: 60%;
-    background-color: red;
+    /* background-color: red; */
+}
+.left>h1,.left>p{
+    margin-left: 5rem;
+}
+.left>h1{
+    font-size: 3rem;
+}
+.left>p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.list{
+    width: 100%;
+    /* background-color: #b947f6; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .list>h5{
     width: 90%;
+    /* background-color: aqua; */
+    margin: 1px;
+    text-align: center;
+    font-size: 1.2rem;
 }
-.list>h5>span{
-    /* width: 200px; */
-    /* width: 30rem;
-    border: 2px solid black;
-    height: 2px; */
 
-    background: var(#717275);
-    flex: auto;
+.list>h5>hr{
+    width: 40%;
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: large;
     height: 2px;
-    margin: auto 15px 0;
-
+    margin-bottom: 4px;
+    border: none;
+    /* color: black; */
+    background-color: black;
 }
+.list>h5>strong{
+    color: #c69347;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+/* =============contact============ */
+.contact{
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-around;
+}
+.contact>div{
+    margin-top: 1rem;
+    margin: 10px;
+    width: 40%;
+    height: 15rem;
+    border-radius: 2rem;
+}
+.leftContact{
+    margin-top: 3rem;
+}
+.leftContact>h1{
+    margin-bottom: 1rem;
+    font-family: sans-serif;
+}
+.leftContact>p>a{
+    color: #c69347;
+    font-size: 1.4rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.leftContact>p>:hover{
+    color: brown;
+}
+.leftContact>div{
+    margin-top: 2rem;
+}
+.leftContact>div>a{
+    padding: 10px 15px;
+    background-color: brown;
+    color: white;
+    border-radius: 50%;
+    margin: 5px;
+}
+.leftContact>div>a:hover{
+    background-color: #c69347;
+}
+.rightContact{
+    background-color: #c69347;
+}
+.rightContact>div{
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    transform: rotate(10deg);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-left: 3rem;
+    flex-direction: column;
+}
+.rightContact>div>p{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.rightContact>div>h2{
+    font-size: 1.5rem;
+    color: white;
+}
+.rightContact>div>i{
+    padding: 20px;
+    background-color: #f6bc65;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 4rem;
+    margin-bottom: 1rem;
+}
+/* =============map============ */
+.maps{
+    background-color: #47d3f6;
+    width: 50rem;
+    margin-left: 5rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+.maps>iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+footer{
+    margin-top: 3rem;
+    width: 100%;
+    height: 42vh;
+    padding-left: 5rem;
+}
+.branchesFooter{
+    display: flex;
+    width: 100%;
+}
+.branchesFooter div{
+    width: 30%;
+    margin: 2rem 0;
+}
+.branchesFooter>div h3{
+    color: brown;
+    font-size: 1.4rem;
+}
+.branchesFooter>div p{
+    color: gray;
+    font-size: 1.2rem;
+}
+.Copyright{
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+}
+.Copyright>a>i{
+    font-size: 1.5rem;
+    color: #c69347;
+    border: 2px solid #c69347;
+    border-radius: 50%;
+    margin-right: 4rem;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.Copyright>a>i:hover{
+    color: brown;
+    border-color: brown;
+}
+

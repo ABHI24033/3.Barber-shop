@@ -9,29 +9,38 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="responsive.css">
+    <!-- javascript file -->
+   
     <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="sidenav">
+    <div class="sidenav" id="sidenav">
         <img src="./images//logo.png" alt="logo">
         <ul>
             <a href="#">
                 <li>HOME</li>
             </a>
-            <a href="#">
+            <a href="#about">
                 <li>OUR STORY</li>
             </a>
-            <a href="#">
+            <a href="#services">
                 <li>SERVICES</li>
             </a>
-            <a href="#">
+            <a href="#price">
                 <li>PRICE LIST</li>
             </a>
-            <a href="#">
+            <a href="#contact">
                 <li>CONTACT</li>
             </a>
         </ul>
+    </div>
+    <div class="navIcons">
+        <i class="fa fa-bars" aria-hidden="true" id="bar" onclick="openNav()"></i>
+        <i class="fa fa-times" aria-hidden="true" id="cross" onclick="closenav()"></i>
     </div>
     <div class="banner">
         <h1>Barber Shop</h1>
@@ -76,7 +85,7 @@
         </div>
     </div>
     <!-- ===============About section end================= -->
-    <div class="services">
+    <div class="services" id="services">
         <h1>Services</h1>
         <div class="service">
             <div>
@@ -110,49 +119,59 @@
         </div>
 
         <div class="booking">
-            <h2>Book a Seat</h2>
-            <p>Please fill out the form and we get back to you</p>
-            <div class="form">
-                <form action="">
-                    <div>
-                        <input type="text" name="name" id="name" placeholder="Full Name">
-                        <input type="number" name="phone" id="phone" placeholder="Phone Number">
-                    </div>
-                    <div>
-                        <input type="time" name="timing" id="time" placeholder="Time of visiting">
-                        <!-- <input type="text" name="" id=""> -->
-                        <select name="brances" id="branches" aria-placeholder="Select branches">
-                            <option disabled selected>Select branches</option>
-                            <option value="ratu-road">Ratu Road</option>
-                            <option value="pisks-more">Piska More</option>
-                            <option value="harmu">Harmu</option>
-                            <option value="lalpur">Lalpur</option>
-                        </select>
-                    </div>
-                    <div>
-                        <input type="date" name="date" id="date" placeholder="Date">
-                        <input type="number" name="noOfPeople" placeholder="Number of People">
-                    </div>
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Comment (Optional)"></textarea>
+            <div>
+                <h2>Book a Seat</h2>
+                <p>Please fill out the form and we get back to you</p>
+                <div class="form">
+                    <form action="">
+                        <div>
+                            <input type="text" name="name" id="name" placeholder="Full Name">
+                            <input type="number" name="phone" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div>
+                            <input type="time" name="timing" id="time" placeholder="Time of visiting">
+                            <!-- <input type="text" name="" id=""> -->
+                            <select name="brances" id="branches" aria-placeholder="Select branches">
+                                <option disabled selected>Select branches</option>
+                                <option value="ratu-road">Ratu Road</option>
+                                <option value="pisks-more">Piska More</option>
+                                <option value="harmu">Harmu</option>
+                                <option value="lalpur">Lalpur</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="date" name="date" id="date" placeholder="Date">
+                            <input type="number" name="noOfPeople" placeholder="Number of People">
+                        </div>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Comment (Optional)"></textarea>
 
-                    <button type="submit" class="bttn brown-btn" style="width: 10rem;">Submit</button>
-                </form>
+                        <button type="submit" class="bttn brown-btn" style="width: 10rem;">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
     <!-- ====================price list start============== -->
-    <div class="price-list">
+    <div class="price-list" id="price">
         <div class="left">
             <h1>Price List</h1>
             <p>starting at $25</p>
             <div class="list">
-                <h5>Hair Cut <span>ad</span><strong>$32.00</strong> </h5>
-                <h5>Hair Cut <span>1</span><strong>$32.00</strong> </h5>
-                <h5>Hair Cut <span>1</span><strong>$32.00</strong> </h5>
-                <h5>Hair Cut <span>1</span><strong>$32.00</strong> </h5>
-                <h5>Hair Cut <span>1</span><strong>$32.00</strong> </h5>
-                <h5>Hair Cut <span>1</span><strong>$32.00</strong> </h5>
-                <h5>Hair Cut <span>1</span><strong>$32.00</strong> </h5>
+                <h5>Hair Cut
+                    <hr><strong>$32.00</strong>
+                </h5>
+                <h5>Beard Trim
+                    <hr><strong>$26.00</strong>
+                </h5>
+                <h5>Razor Cut
+                    <hr><strong>$36.00</strong>
+                </h5>
+                <h5>Shaves
+                    <hr><strong>$30.00</strong>
+                </h5>
+                <h5>Styling / Color
+                    <hr><strong>$25.00</strong>
+                </h5>
             </div>
         </div>
         <div class="right">
@@ -164,7 +183,60 @@
         </div>
     </div>
     <!-- ====================price list end================ -->
+    <!-- ====================contact section start========== -->
+    <div class="contact" id="contact">
+        <div class="leftContact">
+            <h1>Contact Information</h1>
+            <p><a href="tel:8709090517">(+91) 8709090517</a></p>
+            <p><a href="mailto: abhi24033c@gmail.com">abhi24033c@gmail.com</a></p>
+            <div>
+                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="#"> <i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
 
+        </div>
+        <div class="rightContact">
+            <div>
+                <i class="fa-solid fa-store"></i>
+                <h2>OPEN DAILY</h2>
+                <p>10:00 AM - 08:00 PM</p>
+            </div>
+        </div>
+    </div>
+    <!-- ====================contact section end============ -->
+    <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58608.679102597904!2d85.3245952!3d23.3504768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1695286409147!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- ====================Footer section start==================== -->
+    <footer>
+        <h1>Our Branches</h1>
+        <div class="branchesFooter">
+            <div>
+                <h3>Grünberger</h3>
+                <p>Grünberger Str. 31, 10245 Berlin, Germany</p>
+            </div>
+            <div>
+                <h3>Behrenstraße</h3>
+                <p>Behrenstraße 27, 10117 Berlin, Germany</p>
+            </div>
+            <div>
+                <h3>Weinbergsweg</h3>
+                <p>Weinbergsweg 23, 10119 Berlin, Germany</p>
+            </div>
+        </div>
+        <div class="Copyright">
+            <p>Copyright © 2023 Barber Shop- designed by Abhishek kumar</p>
+            <a href="#"><i class="fa-solid fa-arrow-up" title="Back top"></i></a>
+           
+        </div>
+    </footer>
+    <!-- ====================Footer section end--==================== -->
+
+    <script src="script.js"></script>
 </body>
 
 </html>
