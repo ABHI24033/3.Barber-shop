@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber Shop</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
     <!-- css files -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="common.css">
@@ -18,23 +20,23 @@
 </head>
 
 <body>
-    <div class="sidenav" id="sidenav">
+    <div class="sidenav " id="sidenav">
         <img src="./images//logo.png" alt="logo">
         <ul>
-            <a href="#">
-                <li>HOME</li>
+            <a href="#home" >
+                <li class="list active" >HOME</li>
             </a>
             <a href="#about">
-                <li>OUR STORY</li>
+                <li class="list" >OUR STORY</li>
             </a>
             <a href="#services">
-                <li>SERVICES</li>
+                <li class="list" >SERVICES</li>
             </a>
             <a href="#price">
-                <li>PRICE LIST</li>
+                <li class="list" >PRICE LIST</li>
             </a>
             <a href="#contact">
-                <li>CONTACT</li>
+                <li class="list" >CONTACT</li>
             </a>
         </ul>
     </div>
@@ -42,21 +44,22 @@
         <i class="fa fa-bars" aria-hidden="true" id="bar" onclick="openNav()"></i>
         <i class="fa fa-times" aria-hidden="true" id="cross" onclick="closenav()"></i>
     </div>
-    <div class="banner">
+    <!-- ===================Home section start============== -->
+    <div class="banner section" id="home">
         <h1>Barber Shop</h1>
         <p>Get the most professional haircut for you</p>
         <div class="btn">
-            <a href="#"><button class="outlined-btn bttn">About Us</button></a>
-            <a href="#"><button class="brown-btn bttn">What we do</button></a>
+            <a href="#about"><button class="outlined-btn bttn">About Us</button></a>
+            <a href="#services"><button class="brown-btn bttn">What we do</button></a>
         </div>
         <div class="circular">
             <img src="./images/vintage-chair-barbershop.jpg" alt="">
             <p>Hurry Up! Get good haircut.</p>
-            <a href="#"><button class="yellow-btn bttn">Book a seat</button></a>
+            <a href="#contact"><button class="yellow-btn bttn">Book a seat</button></a>
         </div>
     </div>
     <!-- ===============About section start=============== -->
-    <div class="about" id="about">
+    <div class="about section" id="about">
         <div class="Aboutt">
             <h1>Best hairdressers</h1>
             <p>Gentlemen's Barber Shop is created by Abhishek Kumar using HTML,CSS and JAVASCRIPT. There is a sidebar
@@ -84,8 +87,8 @@
             <p id="code">Promo Code: BarBerMo</p>
         </div>
     </div>
-    <!-- ===============About section end================= -->
-    <div class="services" id="services">
+    <!-- =============== service section  start================= -->
+    <div class="services section" id="services">
         <h1>Services</h1>
         <div class="service">
             <div>
@@ -123,7 +126,7 @@
                 <h2>Book a Seat</h2>
                 <p>Please fill out the form and we get back to you</p>
                 <div class="form">
-                    <form action="">
+                    <form action="https://formsubmit.co/abhi24033c@gmail.com" method="post">
                         <div>
                             <input type="text" name="name" id="name" placeholder="Full Name">
                             <input type="number" name="phone" id="phone" placeholder="Phone Number">
@@ -143,7 +146,7 @@
                             <input type="date" name="date" id="date" placeholder="Date">
                             <input type="number" name="noOfPeople" placeholder="Number of People">
                         </div>
-                        <textarea name="" id="" cols="30" rows="5" placeholder="Comment (Optional)"></textarea>
+                        <textarea name="comment" id="" cols="30" rows="5" placeholder="Comment (Optional)"></textarea>
 
                         <button type="submit" class="bttn brown-btn" style="width: 10rem;">Submit</button>
                     </form>
@@ -152,7 +155,7 @@
         </div>
     </div>
     <!-- ====================price list start============== -->
-    <div class="price-list" id="price">
+    <div class="price-list section" id="price">
         <div class="left">
             <h1>Price List</h1>
             <p>starting at $25</p>
@@ -184,7 +187,7 @@
     </div>
     <!-- ====================price list end================ -->
     <!-- ====================contact section start========== -->
-    <div class="contact" id="contact">
+    <div class="contact section" id="contact">
         <div class="leftContact">
             <h1>Contact Information</h1>
             <p><a href="tel:8709090517">(+91) 8709090517</a></p>
@@ -212,7 +215,7 @@
     </div>
 
     <!-- ====================Footer section start==================== -->
-    <footer>
+    <footer >
         <h1>Our Branches</h1>
         <div class="branchesFooter">
             <div>

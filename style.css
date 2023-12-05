@@ -8,9 +8,17 @@
     --fontFamily:cursive;
     --marginLeft:25%;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: var(--fontFamily);
     margin-left: var(--marginLeft);
+    
+    /* overflow-x: hidden; */
+}
+.section{
+    width: 90%;
 }
 .sidenav{
     background-color: var(--navColor);
@@ -46,18 +54,19 @@ body{
 .sidenav>ul>a>li:hover{
    color: white;
 }
+.active{
+    color: white !important;
+}
 /* ============banner================ */
 .banner{
     width: 100%;
     background-image: linear-gradient(90deg,#f6bc65,#47d3f6);
     height: 100vh;
-    /* margin-left: var(--marginLeft); */
     left: 0;
     border-bottom: 1rem solid var(--navColor);
     position: relative;
     overflow: hidden;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
 }
@@ -232,17 +241,17 @@ body{
     background-repeat: no-repeat;
     padding: 3rem 0;
     width: 100%;
-    min-height: 120vh;
+    min-height: 50rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     /* margin-left: 0; */
 }
 .booking>div{
     width: 90%;
-    height: 110vh;
+    height: 48rem;
     background-color: white;
     border-radius: 0.5rem;
     display: flex;
@@ -305,7 +314,7 @@ form>textarea{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
     /* background-color: #47d3f6; */
     align-items: center;
     justify-content: center;
@@ -325,7 +334,7 @@ form>textarea{
     font-weight: 500;
 }
 .list{
-    width: 35rem;
+    width: 100%;
     /* background-color: #b947f6; */
     display: flex;
     flex-wrap: wrap;
@@ -436,7 +445,8 @@ form>textarea{
 /* =============map============ */
 .maps{
     background-color: #47d3f6;
-    width: 50rem;
+    /* width: 50rem; */
+    width: 80%;
     margin-left: 5rem;
     height: 20rem;
     border-radius: 1rem;

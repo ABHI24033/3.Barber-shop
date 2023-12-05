@@ -138,10 +138,10 @@
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
-    .contact>div{
+    /* .contact>div{
         width: 95%;
         
-    }
+    } */
     .maps{
         margin-left: 5px;
         width: 22rem;
@@ -227,11 +227,15 @@
         min-height: 30vh;
         width: 95%;
     }
+    .contact>div{
+        width: 100%;
+    }
     .discount>h1{
         font-size: 2rem;
     }
     .services{
         margin-left: 0;
+        /* height: 80rem; */
     }
     .services>h1{
         text-align: center;
@@ -309,7 +313,7 @@
     }
     .maps{
         margin-left: 5px;
-        width: 22rem;
+        /* width: 22rem; */
         margin: auto;
     }
     footer{
@@ -321,4 +325,16 @@
     .branchesFooter div{
         width: 100%;
     }
+    
+}
+
+@media  (max-width:400px) {
+    /* .leftContact>div{
+        width: 20rem;
+    margin-top: 2rem;
+    } */
+    .contact>div{
+        width: 100%;
+    }
+    
 }
